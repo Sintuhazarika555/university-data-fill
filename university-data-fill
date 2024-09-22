@@ -1,0 +1,70 @@
+#include<stdio.h>
+int main(){
+    
+    printf("WELCOME TO UNIVERSITY DATA FILL SITE \n");
+    
+    //proff struct
+    struct proff{
+    int id ;
+    char name[50];
+    };
+    
+    //student struct
+    struct student{
+    int roll ;
+    char name[50];
+    };
+    
+    //staff struct 
+    struct staff{
+    int id;
+    char name[50];
+    char post[50];
+    };
+    
+    struct proff p1;
+    struct student s1;
+    struct staff f1;
+    
+    int m;
+    printf("enter choice 1-professor,2-student,3-staff : ");
+    scanf("%d",&m);
+    if (m==1){
+        printf("enter name:");
+        scanf("%s",&p1.name);
+        printf("enter id :");
+        scanf("%d",&p1.id);
+        printf("successfully filled______ \n");
+        printf("name = %s \n",p1.name);
+        printf("id = %d \n",p1.id);
+    }
+    else if (m==2){
+        printf("enter name:");
+        scanf("%s",&s1.name);
+        printf("enter roll :");
+        scanf("%d",&s1.roll);
+        printf("successfully filled______ \n");
+        printf("name = %s \n",s1.name);
+        printf("roll = %d \n",s1.roll);
+    }
+    else if (m==3){
+        printf("enter name:");
+        scanf("%s",&f1.name);
+        printf("enter id :");
+        scanf("%d",&f1.id);
+        printf("enter post:");
+        scanf("%s",&f1.post);
+        printf("successfully filed______ \n");
+        printf("name = %s \n",f1.name);
+        printf("id = %d \n",f1.id);
+        printf("post = %s \n",f1.post);
+    }
+    else {
+        printf("invalid data ");
+    
+    }
+    
+    
+    
+    return 0;
+}
